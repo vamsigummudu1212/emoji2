@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-color: aqua;
+        
+    }
+
+.smiling-face{
+ width:200px;
+ height:200px;
+ background-color:yellow;
+ border-radius:50%;
+ position:relative;
+ margin-top: 250px;
+ margin-left: 600px;
+}
+.left-eye{
+width:23%;
+height:20%;
+border-radius:50%;
+background-color:rgb(240,240,240);
+position:absolute;
+left:20%;
+top:20%;
+}
+.right-eye{
+width:23%;
+height:20%;
+border-radius:50%;
+background-color:rgb(240,240,240);
+position:absolute;
+right:20%;
+top:20%;
+}
+.left-pupil{
+width:48%;
+height:45%;
+border-radius:50%;
+background-color:rgb(100,100,100);
+position:absolute;
+top:55%;
+left:26%;
+}
+.right-pupil{
+width:48%;
+height:45%;
+border-radius:50%;
+background-color:rgb(100,100,100);
+position:absolute;
+top:55%;
+left:26%;
+}
+.lip{
+width:52.5%;
+height:25%;
+background-color:yellow;
+border-radius:50%;
+position:absolute;
+left:23.75%;
+top:45%;
+border:solid red;
+border-width:2px 0px 0px 0px;
+transform:rotateZ(0deg);
+}
+.smiling-face:hover .lip{
+ transition-timing-function:ease-in; 
+ transition:transform 0.01s;
+ transition-delay:2s;
+ transform:rotateZ(180deg);
+}
+.smiling-face:hover .left-pupil, .smiling-face:hover .right-pupil{
+transition-property:top,width,height;
+transition-duration:1s,1s,1s;
+transition-delay:0s,1s,1s;
+top:27.5%;
+width:46%;
+height:43%;
+}
+
+</style>
+</head>
+<body>
+  
+<div class="smiling-face">
+ 
+ <span class="left-eye">
+  <span class="left-pupil">
+  </span>
+ </span>
+ 
+ <span class="right-eye">
+  <span class="right-pupil">
+  </span>
+ </span>
+ 
+ <span class="lip">
+ 
+ </span>
+</div>
+
+</body>
+</html>				
